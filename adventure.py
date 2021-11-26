@@ -1,5 +1,11 @@
-#import the function defined in spider_room.py
-from spider_room import *
+# import the function defined in spider_room.py
+from spider_room import spider_room
+
+# import the function defined in deathclaw_room.py
+from deathclaw_room import deathclaw_room
+
+# import the function defined in game_over.py
+from game_over import game_over
 
 def start():
     # give the inital prompts.
@@ -12,7 +18,14 @@ def start():
     if "l" in answer:
         # if the player typed "left" or "l" lead him to the spider_room()
         spider_room()
+    
+    elif "r" in answer:
+        # else if the player typed "right" or "r" lead him to the deathclaw_room()
+        deathclaw_room()
 
+    else:
+        # else call game_over() function with the "reason" argument
+        game_over("Don't you know how to type something properly>")
 
 
 # starting the game
