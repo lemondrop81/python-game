@@ -1,7 +1,7 @@
-#import the function defined in game_over.py
+# import the function defined in game_over.py
 from game_over import game_over
 
-#import the function start defined in adventure.py
+# import the function start defined in adventure.py
 from adventure import start
 
 # vampire room
@@ -28,5 +28,5 @@ def vampire_room():
         # call game_over() with "reason"
         game_over("The Lich librarian kills you for making noise")
     else:
-        # call game_over() with "reason"
+        # go back to start
         start()

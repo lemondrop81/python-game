@@ -4,6 +4,9 @@ from spider_room import spider_room
 # import the function defined in deathclaw_room.py
 from deathclaw_room import deathclaw_room
 
+# import the function defined in vampire_room.py
+from vampire_room import vampire_room
+
 # import the function defined in game_over.py
 from game_over import game_over
 
@@ -22,6 +25,10 @@ def start():
     elif "r" in answer:
         # else if the player typed "right" or "r" lead him to the deathclaw_room()
         deathclaw_room()
+
+    elif "s" in answer:
+        # else if the player typed "straight" or "s" lead him to the vampire_room()
+        vampire_room()
 
     else:
         # else call game_over() function with the "reason" argument
