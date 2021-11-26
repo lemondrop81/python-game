@@ -13,3 +13,6 @@ def vampire_room():
             (3). Turn around and head back through the only door in the room """
     
     print(prompt)
+
+    # take the input()
+    answer = input(">")
