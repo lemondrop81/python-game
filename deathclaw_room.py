@@ -18,4 +18,13 @@ def deathclaw_room():
 
     # take the input()
     answer = input(">")
-    
+
+    if answer == "1":
+        # send player to trophy_room()
+        trophy_room()
+    elif answer == "2":
+        # the player is dead, call game_over() with "reason"
+        game_over("The deathclaw was ravenous and ate you")
+    else:
+        # call game_over() with "reason"
+        game_over("Go and learn how to type!")
