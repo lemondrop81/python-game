@@ -1,9 +1,6 @@
 # import the function defined in game_over.py
 from game_over import game_over
 
-# import the function start defined in adventure.py
-from adventure import start
-
 # vampire room
 def vampire_room():
     # give the prompts
@@ -27,6 +24,11 @@ def vampire_room():
     elif answer == "2":
         # call game_over() with "reason"
         game_over("The Lich librarian kills you for making noise")
+
+    elif answer == "3":
+        # call game_over() with "reason"
+        game_over("The vampire attacks you while your back is turned")
+    
     else:
-        # go back to start
-        start()
+        # call game_over() with "reason"
+        game_over("Go and learn how to type!")
