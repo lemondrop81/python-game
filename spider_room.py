@@ -28,3 +28,6 @@ def spider_room():
         # send the player to the trophy room
         print("\nThe spider was so impressed with your taunting skills he lets you pass through the door.")
         trophy_room()
+    else:
+        # call game_over() with "reason"
+        game_over("Go and learn how to type!")
