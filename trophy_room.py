@@ -9,3 +9,7 @@ def trophy_room():
             (2). Just go through the door. """
     
     print(prompt)
+
+    #take imput()
+    answer = input(">")
+    
