@@ -1,3 +1,5 @@
+#import the function defined in spider_room.py
+from spider_room import *
 
 def start():
     # give the inital prompts.
