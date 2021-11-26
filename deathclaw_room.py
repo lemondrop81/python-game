@@ -15,3 +15,7 @@ def deathclaw_room():
             (2) Kill the deathclaw and show your bravery. """
     
     print(prompt)
+
+    # take the input()
+    answer = input(">")
+    
