@@ -20,3 +20,8 @@ def spider_room():
     if answer == "1":
         # the player is dead
         game_over("The spider killed you.")
+
+    elif answer == "2":
+        # send the player to the trophy room
+        print("\nThe spider was so impressed with your taunting skills he lets you pass through the door.")
+        trophy_room()
